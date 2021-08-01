@@ -16,26 +16,24 @@
     &__wrapper {
         margin-top: 60px;
         display: grid;
-        grid-template: repeat(2, 280px)/repeat(4, 280px);
+        grid-template: repeat(2, 280px) / repeat(4, 280px);
         grid-auto-rows: 280px;
         gap: 5px;
-        .vertial {
+        .vertical {
             grid-row: 1/3;
             grid-column: 4/5;
         }
-        .horizontal {
+        .horizonal {
             grid-row: 2/3;
             grid-column: 2/4;
         }
     }
     &__item {
-        transition: all 0.5s;
+        transition: all 0.6s;
         img {
             width: 100%;
-        }
-        filter: brightness(40%);
-        &:hover {
-            filter: brightness(100%);
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
